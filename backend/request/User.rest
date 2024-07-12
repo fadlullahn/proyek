@@ -1,0 +1,36 @@
+// Create a User
+POST http://localhost:5001/user
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "admin@admin.com",
+    "password": "admin",
+    "confPassword": "admin",
+    "role": "admin"
+}
+
+###
+// Get All User
+GET http://localhost:5001/user
+
+###
+// Get Single User
+GET http://localhost:5001/user/uuid
+
+###
+// Update a User
+PATCH http://localhost:5001/user/uuid
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "",
+    "password": "",
+    "confPassword": "",
+    "role": ""
+}
+
+###
+// Delete a User
+DELETE http://localhost:5001/user/uuid
